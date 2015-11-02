@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00EAEA4AC46494713CD5796BC28C86B1 /* RSCode128Generator.h in Headers */ = {isa = PBXBuildFile; fileRef = DE61FAB89794A6B68A68643220194C25 /* RSCode128Generator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C2D7A93766A63106BC248CB4DAEA4BF /* RSISBN13Generator.h in Headers */ = {isa = PBXBuildFile; fileRef = 507062B51CC270EDD1D25DE4E8BB1D4D /* RSISBN13Generator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E00CB1EC4AD78E7D4FF560043880200 /* RSScannerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D968C620CE81F671A2BADFC924A523BC /* RSScannerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18CB0744B8E1E3079C43BAFE72AB27DE /* RSISSN13Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF441779B2B0D3DF085CFA20B1504AA /* RSISSN13Generator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1BAE3A3B80B0FE0B103C2069AA28042C /* RSCode93Generator.h in Headers */ = {isa = PBXBuildFile; fileRef = B7D84CDB6929C0F9217B595246E9FA7F /* RSCode93Generator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CE43E35320171DC44E34E220C1E7B08 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE74F99100C696C6B840EBBCB01A9914 /* AVFoundation.framework */; };
+		285A0D28D637E201351E1AB11B197B34 /* RSCodeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 454CA45B09ABE2F81F615D802AA8B5DD /* RSCodeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29721565A0E3D2BD45844D8F66DB050B /* RSUPCEGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F15742DEAF9DD4F6AFE6B3B4226AE2 /* RSUPCEGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EA2BDFEF942ACCD18D7B59C778D6E6E /* RSISSN13Generator.h in Headers */ = {isa = PBXBuildFile; fileRef = 331AA8A78DF27F258AAD8ED998B291EF /* RSISSN13Generator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		321E38676857450A85CB338F25C8CB5A /* RSCode39Mod43Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F73820A7EB9566D53EEFD2BF93F1C2D /* RSCode39Mod43Generator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3512EF2F7235DB55868A7B8E3B33B3A1 /* RSEAN13Generator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC51E716636C9FA9889EC02CDC6C986 /* RSEAN13Generator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41C6021FD7B5253CBB9FC3F34622AE96 /* RSCode39Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E52747BAA00CBA95FCE1DFC27734416 /* RSCode39Generator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		48661E51205267E0921E2FDB75EFFF84 /* RSEANGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BA894D2C2849D6CE327EE5B71B8CF4F6 /* RSEANGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AAD3F88DBDA281BAB91ADAE29822FA5 /* RSBarcodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FAFE450532EA1E35C51D8D15A04E379 /* RSBarcodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BD678166885CD4A6249D4DE3FFCB099 /* RSCode128Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = B76CDA5112DA4F9D50F39EF6B570E8F2 /* RSCode128Generator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5418DE188B0B7BC38A818371683512BA /* RSCode93Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 405EA1E9E9F7B9F59C270EDFA0A99B78 /* RSCode93Generator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5DB798D9AC4E8AB944C6861B8872A0E4 /* RSExtendedCode39Generator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF18393B75B07DF6349841D68E95D0B /* RSExtendedCode39Generator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		674E8FE235DAFF2B85763BD742B9DEBC /* RSCode39Generator.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9467A3699FB55B33AA7FD39BF54B34 /* RSCode39Generator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BBD96EDC137414C7AE2DD5338A6CCAF /* RSScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD49BE6A350FE51CD38A336B057C025 /* RSScannerViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7DE2DD72154C005D9D53FAC31010C736 /* RSUnifiedCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C230384442AB7A3DAF0026D68A43DA1 /* RSUnifiedCodeGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		83968A8E9EA6DD5F8BF0BA4E84DECE25 /* RSCornersView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0132D39693DE71190D8CADE5C783A9C /* RSCornersView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		87082DDEFCAEA266A7D13FC8F16E9486 /* RSCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A6B4BCB866FDD7D2A29C33D76DAD57 /* RSCodeGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8D38CF90E97DAE628567EA38883F391D /* RSISBN13Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA418986F04658153FF0FB89C089A407 /* RSISBN13Generator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9250588CE393B819DC8583FD501F8DAA /* RSCornersView.h in Headers */ = {isa = PBXBuildFile; fileRef = B3A5F11A40CC7706836A417169C71357 /* RSCornersView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92BE4F58B989D502C41DE49B5890A4DF /* RSEAN8Generator.h in Headers */ = {isa = PBXBuildFile; fileRef = 950CA69299BBDEEA0188EB694FDB27FA /* RSEAN8Generator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		955BD92F08EA0BEB4F0654AE915EDC04 /* RSCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7584E201AEBEF96A4DA785A466501587 /* RSCodeView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		98E512785110501B451B583C45A97504 /* RSUPCEGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9A22B701162EDA1A7585E7DA343C63 /* RSUPCEGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9BFBBD877554F735D6946DE2D4DE68EC /* RSEAN13Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = E11982D11DD39CF397B06FB2E0AEFA21 /* RSEAN13Generator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9E19BC32A51EBC8A2A1ED0643E46D785 /* TWMessageBarManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 636EFB8C6E35517A4CF70740B02C98AA /* TWMessageBarManager-dummy.m */; };
+		9ED0D7FABEFFBCA3C0D391C1BB78A0EE /* RSExtendedCode39Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 737CAE77667DD2E6A0947FECC97753C5 /* RSExtendedCode39Generator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A0F2E16599E6D457A9FD22477FC372BA /* TWMessageBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9378CB978FD1A41A1890547F245AAE9A /* TWMessageBarManager.m */; };
+		A4D4CF3EF659692A64D4D1472E569538 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD14AEB987574F5C941547F3AAAD9E1 /* Foundation.framework */; };
+		A56C478ECD62CD36D2EA5A1F48EB6C16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD14AEB987574F5C941547F3AAAD9E1 /* Foundation.framework */; };
+		A69D7A6789B723AB2AA57B8AC1A20A2A /* TWMessageBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AC180314AFC25A8B72904F6EE62CEF /* TWMessageBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB3358AFB84E5D0145AD28D306DE0508 /* RSITFGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BAD799A8056D3A820B30682E8F04E8 /* RSITFGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AD59B0A4C0B09AA7F9294A3490E35521 /* RSCodeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = C0BBC9BC6D844CF2828AA66BE7EC0B73 /* RSCodeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B03D1F157796BE0CC98B17B24BD84262 /* RSUnifiedCodeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4F381A44098E24828D50419FF5AD80 /* RSUnifiedCodeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B96724B913F4375D8BE3E1DB001F3A8D /* RSEANGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF2C73889FDA1E3915B65541099C5FD /* RSEANGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C108326E162BE2C2201EBB5061A46B5A /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFCAEE8A71B04EE4BAAF60CE1306D75 /* CoreImage.framework */; };
+		C52ED0C3E3F07F6DD22F8C7A013786B8 /* RSBarcodes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E87CD99F5E3D15ED458EDF0D1FB29564 /* RSBarcodes-dummy.m */; };
+		D1395EE2DF2BFE32D3C8B532DEF2C035 /* RSITF14Generator.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E585A2912833D8214FDB5A9145E2F2 /* RSITF14Generator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9D6C458A55D256F70EBDA1505C6669C /* RSITFGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = B6066EB01463BD388CCC0A5377AA14F0 /* RSITFGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB8C10AEE4B707F63487D3348B01CBED /* RSITF14Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5C3D0BDDD6260491359321A8F3F12C /* RSITF14Generator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DD5F9D348EC2739185C09A09959228A1 /* RSCode39Mod43Generator.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C3ACCE05D12ADF84860433E9D104CF /* RSCode39Mod43Generator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE13674D1407441A78062D83C08E1A08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD14AEB987574F5C941547F3AAAD9E1 /* Foundation.framework */; };
+		E32381F09FD6FA8DCABCA7E9B69BC166 /* Pods-GT Buzzcard Scanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D814338520981B920D453D7BC26FD /* Pods-GT Buzzcard Scanner-dummy.m */; };
+		ED85EE0B13C11592637F5697ABAC91F8 /* RSCodeGen.h in Headers */ = {isa = PBXBuildFile; fileRef = 017F35F52C6F14DCFEBBF7DCCC24FA7F /* RSCodeGen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF97E4E2CEB992DE55359EEC71D58AB9 /* RSEAN8Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A8CBB8A371776A7AAFA08EC097A61E /* RSEAN8Generator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3598216A229649E1DD33D04FADCAE17B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAE8C68C27E3C7F4A6FAFE56D57AD6BE;
+			remoteInfo = TWMessageBarManager;
+		};
+		4E826226FC8E7BAF049682261D0E10B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD03EEB17ED023A698787EA6106F6971;
+			remoteInfo = RSBarcodes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		017F35F52C6F14DCFEBBF7DCCC24FA7F /* RSCodeGen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCodeGen.h; path = RSBarcodes/RSCodeGen.h; sourceTree = "<group>"; };
+		05890277E58FF0754C248850D76C50A9 /* Pods-GT Buzzcard Scanner-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GT Buzzcard Scanner-resources.sh"; sourceTree = "<group>"; };
+		0F1C0DAE846EA73FCA36D9C13D1D38F1 /* icon-error@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon-error@2x.png"; path = "Classes/Icons/icon-error@2x.png"; sourceTree = "<group>"; };
+		136DF55FA302C9EE08C11598A6F880EC /* Pods-GT Buzzcard Scanner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GT Buzzcard Scanner-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1C230384442AB7A3DAF0026D68A43DA1 /* RSUnifiedCodeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSUnifiedCodeGenerator.m; path = RSBarcodes/RSUnifiedCodeGenerator.m; sourceTree = "<group>"; };
+		1CF18393B75B07DF6349841D68E95D0B /* RSExtendedCode39Generator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSExtendedCode39Generator.h; path = RSBarcodes/RSExtendedCode39Generator.h; sourceTree = "<group>"; };
+		1E52747BAA00CBA95FCE1DFC27734416 /* RSCode39Generator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCode39Generator.m; path = RSBarcodes/RSCode39Generator.m; sourceTree = "<group>"; };
+		1F8D814338520981B920D453D7BC26FD /* Pods-GT Buzzcard Scanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GT Buzzcard Scanner-dummy.m"; sourceTree = "<group>"; };
+		223D1061B913ADBB498CF6DAF1EB8494 /* Pods-GT Buzzcard Scanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GT Buzzcard Scanner.release.xcconfig"; sourceTree = "<group>"; };
+		224EAA5E453350B4959D84090B895188 /* libTWMessageBarManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTWMessageBarManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DC51E716636C9FA9889EC02CDC6C986 /* RSEAN13Generator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSEAN13Generator.h; path = RSBarcodes/RSEAN13Generator.h; sourceTree = "<group>"; };
+		2F73820A7EB9566D53EEFD2BF93F1C2D /* RSCode39Mod43Generator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCode39Mod43Generator.m; path = RSBarcodes/RSCode39Mod43Generator.m; sourceTree = "<group>"; };
+		331AA8A78DF27F258AAD8ED998B291EF /* RSISSN13Generator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSISSN13Generator.h; path = RSBarcodes/RSISSN13Generator.h; sourceTree = "<group>"; };
+		36F15742DEAF9DD4F6AFE6B3B4226AE2 /* RSUPCEGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSUPCEGenerator.h; path = RSBarcodes/RSUPCEGenerator.h; sourceTree = "<group>"; };
+		37E8CD97ACF19776BBCC0C0388D6029D /* icon-info.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon-info.png"; path = "Classes/Icons/icon-info.png"; sourceTree = "<group>"; };
+		3F899F7FDB4D1485954C57F39472D44F /* icon-error.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon-error.png"; path = "Classes/Icons/icon-error.png"; sourceTree = "<group>"; };
+		3FD49BE6A350FE51CD38A336B057C025 /* RSScannerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSScannerViewController.m; path = RSBarcodes/RSScannerViewController.m; sourceTree = "<group>"; };
+		3FF2C73889FDA1E3915B65541099C5FD /* RSEANGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSEANGenerator.m; path = RSBarcodes/RSEANGenerator.m; sourceTree = "<group>"; };
+		405EA1E9E9F7B9F59C270EDFA0A99B78 /* RSCode93Generator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCode93Generator.m; path = RSBarcodes/RSCode93Generator.m; sourceTree = "<group>"; };
+		407C5ECDD7EE90D74E174F817DAA7DEF /* icon-info@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon-info@2x.png"; path = "Classes/Icons/icon-info@2x.png"; sourceTree = "<group>"; };
+		454CA45B09ABE2F81F615D802AA8B5DD /* RSCodeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCodeView.h; path = RSBarcodes/RSCodeView.h; sourceTree = "<group>"; };
+		45AC180314AFC25A8B72904F6EE62CEF /* TWMessageBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWMessageBarManager.h; path = Classes/TWMessageBarManager.h; sourceTree = "<group>"; };
+		4B066DA77D78D3597B702F3B0A49627E /* TWMessageBarManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TWMessageBarManager.xcconfig; sourceTree = "<group>"; };
+		507062B51CC270EDD1D25DE4E8BB1D4D /* RSISBN13Generator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSISBN13Generator.h; path = RSBarcodes/RSISBN13Generator.h; sourceTree = "<group>"; };
+		5F9A22B701162EDA1A7585E7DA343C63 /* RSUPCEGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSUPCEGenerator.m; path = RSBarcodes/RSUPCEGenerator.m; sourceTree = "<group>"; };
+		5FC2F1F80313D372E721956E45315A79 /* Pods-GT Buzzcard Scanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GT Buzzcard Scanner.debug.xcconfig"; sourceTree = "<group>"; };
+		636EFB8C6E35517A4CF70740B02C98AA /* TWMessageBarManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TWMessageBarManager-dummy.m"; sourceTree = "<group>"; };
+		704E72E7AB4D5A669455926AF2A00903 /* RSBarcodes-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSBarcodes-prefix.pch"; sourceTree = "<group>"; };
+		737CAE77667DD2E6A0947FECC97753C5 /* RSExtendedCode39Generator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSExtendedCode39Generator.m; path = RSBarcodes/RSExtendedCode39Generator.m; sourceTree = "<group>"; };
+		7584E201AEBEF96A4DA785A466501587 /* RSCodeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCodeView.m; path = RSBarcodes/RSCodeView.m; sourceTree = "<group>"; };
+		7FAFE450532EA1E35C51D8D15A04E379 /* RSBarcodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSBarcodes.h; path = RSBarcodes/RSBarcodes.h; sourceTree = "<group>"; };
+		81BAD799A8056D3A820B30682E8F04E8 /* RSITFGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSITFGenerator.m; path = RSBarcodes/RSITFGenerator.m; sourceTree = "<group>"; };
+		87C4382E15134462E7429F6F15423B11 /* Pods-GT Buzzcard Scanner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GT Buzzcard Scanner-frameworks.sh"; sourceTree = "<group>"; };
+		894FCDF3E5869228BA2ACE33B5CFADB1 /* libRSBarcodes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRSBarcodes.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		915AA9D0621EAFA00232ED08ADBD7046 /* icon-success@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon-success@2x.png"; path = "Classes/Icons/icon-success@2x.png"; sourceTree = "<group>"; };
+		9378CB978FD1A41A1890547F245AAE9A /* TWMessageBarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWMessageBarManager.m; path = Classes/TWMessageBarManager.m; sourceTree = "<group>"; };
+		950CA69299BBDEEA0188EB694FDB27FA /* RSEAN8Generator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSEAN8Generator.h; path = RSBarcodes/RSEAN8Generator.h; sourceTree = "<group>"; };
+		9BFCAEE8A71B04EE4BAAF60CE1306D75 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		A55612D3CE4AD2B9A949D995F062C0DA /* Pods-GT Buzzcard Scanner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GT Buzzcard Scanner-acknowledgements.plist"; sourceTree = "<group>"; };
+		AA418986F04658153FF0FB89C089A407 /* RSISBN13Generator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSISBN13Generator.m; path = RSBarcodes/RSISBN13Generator.m; sourceTree = "<group>"; };
+		B0132D39693DE71190D8CADE5C783A9C /* RSCornersView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCornersView.m; path = RSBarcodes/RSCornersView.m; sourceTree = "<group>"; };
+		B3A5F11A40CC7706836A417169C71357 /* RSCornersView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCornersView.h; path = RSBarcodes/RSCornersView.h; sourceTree = "<group>"; };
+		B6066EB01463BD388CCC0A5377AA14F0 /* RSITFGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSITFGenerator.h; path = RSBarcodes/RSITFGenerator.h; sourceTree = "<group>"; };
+		B76CDA5112DA4F9D50F39EF6B570E8F2 /* RSCode128Generator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCode128Generator.m; path = RSBarcodes/RSCode128Generator.m; sourceTree = "<group>"; };
+		B7D84CDB6929C0F9217B595246E9FA7F /* RSCode93Generator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCode93Generator.h; path = RSBarcodes/RSCode93Generator.h; sourceTree = "<group>"; };
+		BA3BE2A0CA13F5AAECD0A013F20C6147 /* libPods-GT Buzzcard Scanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GT Buzzcard Scanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BA894D2C2849D6CE327EE5B71B8CF4F6 /* RSEANGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSEANGenerator.h; path = RSBarcodes/RSEANGenerator.h; sourceTree = "<group>"; };
+		BB87FA2E02692EB34A6CEF1234C17DD7 /* RSBarcodes.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSBarcodes.xcconfig; sourceTree = "<group>"; };
+		BBD14AEB987574F5C941547F3AAAD9E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BCF441779B2B0D3DF085CFA20B1504AA /* RSISSN13Generator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSISSN13Generator.m; path = RSBarcodes/RSISSN13Generator.m; sourceTree = "<group>"; };
+		BE74F99100C696C6B840EBBCB01A9914 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		C0BBC9BC6D844CF2828AA66BE7EC0B73 /* RSCodeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCodeGenerator.h; path = RSBarcodes/RSCodeGenerator.h; sourceTree = "<group>"; };
+		C8A8CBB8A371776A7AAFA08EC097A61E /* RSEAN8Generator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSEAN8Generator.m; path = RSBarcodes/RSEAN8Generator.m; sourceTree = "<group>"; };
+		D3C3ACCE05D12ADF84860433E9D104CF /* RSCode39Mod43Generator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCode39Mod43Generator.h; path = RSBarcodes/RSCode39Mod43Generator.h; sourceTree = "<group>"; };
+		D968C620CE81F671A2BADFC924A523BC /* RSScannerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSScannerViewController.h; path = RSBarcodes/RSScannerViewController.h; sourceTree = "<group>"; };
+		DE61FAB89794A6B68A68643220194C25 /* RSCode128Generator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCode128Generator.h; path = RSBarcodes/RSCode128Generator.h; sourceTree = "<group>"; };
+		E11982D11DD39CF397B06FB2E0AEFA21 /* RSEAN13Generator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSEAN13Generator.m; path = RSBarcodes/RSEAN13Generator.m; sourceTree = "<group>"; };
+		E87CD99F5E3D15ED458EDF0D1FB29564 /* RSBarcodes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSBarcodes-dummy.m"; sourceTree = "<group>"; };
+		ED9467A3699FB55B33AA7FD39BF54B34 /* RSCode39Generator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCode39Generator.h; path = RSBarcodes/RSCode39Generator.h; sourceTree = "<group>"; };
+		EE5C3D0BDDD6260491359321A8F3F12C /* RSITF14Generator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSITF14Generator.m; path = RSBarcodes/RSITF14Generator.m; sourceTree = "<group>"; };
+		EF0D819BAF0115B7B59AFE25B5962D5E /* icon-success.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon-success.png"; path = "Classes/Icons/icon-success.png"; sourceTree = "<group>"; };
+		F1A6B4BCB866FDD7D2A29C33D76DAD57 /* RSCodeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCodeGenerator.m; path = RSBarcodes/RSCodeGenerator.m; sourceTree = "<group>"; };
+		F5E585A2912833D8214FDB5A9145E2F2 /* RSITF14Generator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSITF14Generator.h; path = RSBarcodes/RSITF14Generator.h; sourceTree = "<group>"; };
+		FA4F381A44098E24828D50419FF5AD80 /* RSUnifiedCodeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSUnifiedCodeGenerator.h; path = RSBarcodes/RSUnifiedCodeGenerator.h; sourceTree = "<group>"; };
+		FD59097268CC35E514CB7275E0DECA0A /* TWMessageBarManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TWMessageBarManager-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41191AB8E6DB9997172C9D52372681E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A56C478ECD62CD36D2EA5A1F48EB6C16 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730FE42C13E4995B36847C994BA7E5F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE43E35320171DC44E34E220C1E7B08 /* AVFoundation.framework in Frameworks */,
+				C108326E162BE2C2201EBB5061A46B5A /* CoreImage.framework in Frameworks */,
+				A4D4CF3EF659692A64D4D1472E569538 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6C57CFD6FC8CC07D9BB7B4ED49E2405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE13674D1407441A78062D83C08E1A08 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FED7120E30C329740DF724C1748D949E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CA9E62B1C2669822C45A84F69DE2279 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA3BE2A0CA13F5AAECD0A013F20C6147 /* libPods-GT Buzzcard Scanner.a */,
+				894FCDF3E5869228BA2ACE33B5CFADB1 /* libRSBarcodes.a */,
+				224EAA5E453350B4959D84090B895188 /* libTWMessageBarManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CC9979A41490E58A6093D24AC07369C /* Pods-GT Buzzcard Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				136DF55FA302C9EE08C11598A6F880EC /* Pods-GT Buzzcard Scanner-acknowledgements.markdown */,
+				A55612D3CE4AD2B9A949D995F062C0DA /* Pods-GT Buzzcard Scanner-acknowledgements.plist */,
+				1F8D814338520981B920D453D7BC26FD /* Pods-GT Buzzcard Scanner-dummy.m */,
+				87C4382E15134462E7429F6F15423B11 /* Pods-GT Buzzcard Scanner-frameworks.sh */,
+				05890277E58FF0754C248850D76C50A9 /* Pods-GT Buzzcard Scanner-resources.sh */,
+				5FC2F1F80313D372E721956E45315A79 /* Pods-GT Buzzcard Scanner.debug.xcconfig */,
+				223D1061B913ADBB498CF6DAF1EB8494 /* Pods-GT Buzzcard Scanner.release.xcconfig */,
+			);
+			name = "Pods-GT Buzzcard Scanner";
+			path = "Target Support Files/Pods-GT Buzzcard Scanner";
+			sourceTree = "<group>";
+		};
+		3FB7B9C70B3E3E4696DEEF1C3969CA26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F899F7FDB4D1485954C57F39472D44F /* icon-error.png */,
+				0F1C0DAE846EA73FCA36D9C13D1D38F1 /* icon-error@2x.png */,
+				37E8CD97ACF19776BBCC0C0388D6029D /* icon-info.png */,
+				407C5ECDD7EE90D74E174F817DAA7DEF /* icon-info@2x.png */,
+				EF0D819BAF0115B7B59AFE25B5962D5E /* icon-success.png */,
+				915AA9D0621EAFA00232ED08ADBD7046 /* icon-success@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5F346D08714AD1AD310F2CBC86AEE7DB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9979A41490E58A6093D24AC07369C /* Pods-GT Buzzcard Scanner */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		62894CB2E97EAA877E7FCF8838CD36AD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB87FA2E02692EB34A6CEF1234C17DD7 /* RSBarcodes.xcconfig */,
+				E87CD99F5E3D15ED458EDF0D1FB29564 /* RSBarcodes-dummy.m */,
+				704E72E7AB4D5A669455926AF2A00903 /* RSBarcodes-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RSBarcodes";
+			sourceTree = "<group>";
+		};
+		68589A12644049C38E546F61F3411587 /* TWMessageBarManager */ = {
+			isa = PBXGroup;
+			children = (
+				45AC180314AFC25A8B72904F6EE62CEF /* TWMessageBarManager.h */,
+				9378CB978FD1A41A1890547F245AAE9A /* TWMessageBarManager.m */,
+				3FB7B9C70B3E3E4696DEEF1C3969CA26 /* Resources */,
+				FB84A09979F261C78F6EB5AEE0F7DEA4 /* Support Files */,
+			);
+			path = TWMessageBarManager;
+			sourceTree = "<group>";
+		};
+		6FB9411FDF541E28D05C9DCC796C6DE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8840A30C720BD4CC65E6C5C3F35DE614 /* RSBarcodes */,
+				68589A12644049C38E546F61F3411587 /* TWMessageBarManager */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				6FB9411FDF541E28D05C9DCC796C6DE7 /* Pods */,
+				2CA9E62B1C2669822C45A84F69DE2279 /* Products */,
+				5F346D08714AD1AD310F2CBC86AEE7DB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8840A30C720BD4CC65E6C5C3F35DE614 /* RSBarcodes */ = {
+			isa = PBXGroup;
+			children = (
+				7FAFE450532EA1E35C51D8D15A04E379 /* RSBarcodes.h */,
+				DE61FAB89794A6B68A68643220194C25 /* RSCode128Generator.h */,
+				B76CDA5112DA4F9D50F39EF6B570E8F2 /* RSCode128Generator.m */,
+				ED9467A3699FB55B33AA7FD39BF54B34 /* RSCode39Generator.h */,
+				1E52747BAA00CBA95FCE1DFC27734416 /* RSCode39Generator.m */,
+				D3C3ACCE05D12ADF84860433E9D104CF /* RSCode39Mod43Generator.h */,
+				2F73820A7EB9566D53EEFD2BF93F1C2D /* RSCode39Mod43Generator.m */,
+				B7D84CDB6929C0F9217B595246E9FA7F /* RSCode93Generator.h */,
+				405EA1E9E9F7B9F59C270EDFA0A99B78 /* RSCode93Generator.m */,
+				017F35F52C6F14DCFEBBF7DCCC24FA7F /* RSCodeGen.h */,
+				C0BBC9BC6D844CF2828AA66BE7EC0B73 /* RSCodeGenerator.h */,
+				F1A6B4BCB866FDD7D2A29C33D76DAD57 /* RSCodeGenerator.m */,
+				454CA45B09ABE2F81F615D802AA8B5DD /* RSCodeView.h */,
+				7584E201AEBEF96A4DA785A466501587 /* RSCodeView.m */,
+				B3A5F11A40CC7706836A417169C71357 /* RSCornersView.h */,
+				B0132D39693DE71190D8CADE5C783A9C /* RSCornersView.m */,
+				2DC51E716636C9FA9889EC02CDC6C986 /* RSEAN13Generator.h */,
+				E11982D11DD39CF397B06FB2E0AEFA21 /* RSEAN13Generator.m */,
+				950CA69299BBDEEA0188EB694FDB27FA /* RSEAN8Generator.h */,
+				C8A8CBB8A371776A7AAFA08EC097A61E /* RSEAN8Generator.m */,
+				BA894D2C2849D6CE327EE5B71B8CF4F6 /* RSEANGenerator.h */,
+				3FF2C73889FDA1E3915B65541099C5FD /* RSEANGenerator.m */,
+				1CF18393B75B07DF6349841D68E95D0B /* RSExtendedCode39Generator.h */,
+				737CAE77667DD2E6A0947FECC97753C5 /* RSExtendedCode39Generator.m */,
+				507062B51CC270EDD1D25DE4E8BB1D4D /* RSISBN13Generator.h */,
+				AA418986F04658153FF0FB89C089A407 /* RSISBN13Generator.m */,
+				331AA8A78DF27F258AAD8ED998B291EF /* RSISSN13Generator.h */,
+				BCF441779B2B0D3DF085CFA20B1504AA /* RSISSN13Generator.m */,
+				F5E585A2912833D8214FDB5A9145E2F2 /* RSITF14Generator.h */,
+				EE5C3D0BDDD6260491359321A8F3F12C /* RSITF14Generator.m */,
+				B6066EB01463BD388CCC0A5377AA14F0 /* RSITFGenerator.h */,
+				81BAD799A8056D3A820B30682E8F04E8 /* RSITFGenerator.m */,
+				D968C620CE81F671A2BADFC924A523BC /* RSScannerViewController.h */,
+				3FD49BE6A350FE51CD38A336B057C025 /* RSScannerViewController.m */,
+				FA4F381A44098E24828D50419FF5AD80 /* RSUnifiedCodeGenerator.h */,
+				1C230384442AB7A3DAF0026D68A43DA1 /* RSUnifiedCodeGenerator.m */,
+				36F15742DEAF9DD4F6AFE6B3B4226AE2 /* RSUPCEGenerator.h */,
+				5F9A22B701162EDA1A7585E7DA343C63 /* RSUPCEGenerator.m */,
+				62894CB2E97EAA877E7FCF8838CD36AD /* Support Files */,
+			);
+			path = RSBarcodes;
+			sourceTree = "<group>";
+		};
+		FB84A09979F261C78F6EB5AEE0F7DEA4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B066DA77D78D3597B702F3B0A49627E /* TWMessageBarManager.xcconfig */,
+				636EFB8C6E35517A4CF70740B02C98AA /* TWMessageBarManager-dummy.m */,
+				FD59097268CC35E514CB7275E0DECA0A /* TWMessageBarManager-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TWMessageBarManager";
+			sourceTree = "<group>";
+		};
+		FED7120E30C329740DF724C1748D949E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BE74F99100C696C6B840EBBCB01A9914 /* AVFoundation.framework */,
+				9BFCAEE8A71B04EE4BAAF60CE1306D75 /* CoreImage.framework */,
+				BBD14AEB987574F5C941547F3AAAD9E1 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		24EFE5175B05D6D0438FDF927B94EF3E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AAD3F88DBDA281BAB91ADAE29822FA5 /* RSBarcodes.h in Headers */,
+				00EAEA4AC46494713CD5796BC28C86B1 /* RSCode128Generator.h in Headers */,
+				674E8FE235DAFF2B85763BD742B9DEBC /* RSCode39Generator.h in Headers */,
+				DD5F9D348EC2739185C09A09959228A1 /* RSCode39Mod43Generator.h in Headers */,
+				1BAE3A3B80B0FE0B103C2069AA28042C /* RSCode93Generator.h in Headers */,
+				ED85EE0B13C11592637F5697ABAC91F8 /* RSCodeGen.h in Headers */,
+				AD59B0A4C0B09AA7F9294A3490E35521 /* RSCodeGenerator.h in Headers */,
+				285A0D28D637E201351E1AB11B197B34 /* RSCodeView.h in Headers */,
+				9250588CE393B819DC8583FD501F8DAA /* RSCornersView.h in Headers */,
+				3512EF2F7235DB55868A7B8E3B33B3A1 /* RSEAN13Generator.h in Headers */,
+				92BE4F58B989D502C41DE49B5890A4DF /* RSEAN8Generator.h in Headers */,
+				48661E51205267E0921E2FDB75EFFF84 /* RSEANGenerator.h in Headers */,
+				5DB798D9AC4E8AB944C6861B8872A0E4 /* RSExtendedCode39Generator.h in Headers */,
+				0C2D7A93766A63106BC248CB4DAEA4BF /* RSISBN13Generator.h in Headers */,
+				2EA2BDFEF942ACCD18D7B59C778D6E6E /* RSISSN13Generator.h in Headers */,
+				D1395EE2DF2BFE32D3C8B532DEF2C035 /* RSITF14Generator.h in Headers */,
+				D9D6C458A55D256F70EBDA1505C6669C /* RSITFGenerator.h in Headers */,
+				0E00CB1EC4AD78E7D4FF560043880200 /* RSScannerViewController.h in Headers */,
+				B03D1F157796BE0CC98B17B24BD84262 /* RSUnifiedCodeGenerator.h in Headers */,
+				29721565A0E3D2BD45844D8F66DB050B /* RSUPCEGenerator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3241768AAFBC318C90B486B2CCCEA359 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A69D7A6789B723AB2AA57B8AC1A20A2A /* TWMessageBarManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		515BF6F7F529EBB43210ADF1D6E27757 /* Pods-GT Buzzcard Scanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2583D7C0AB62A5C29B9EA956E2A70A9 /* Build configuration list for PBXNativeTarget "Pods-GT Buzzcard Scanner" */;
+			buildPhases = (
+				2EC461E62EF1E8DA834856B00318879E /* Sources */,
+				41191AB8E6DB9997172C9D52372681E3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A6595314B52B8E7F75F74B3565C55C8 /* PBXTargetDependency */,
+				86EB39D9752F801D65C2E192286ADF43 /* PBXTargetDependency */,
+			);
+			name = "Pods-GT Buzzcard Scanner";
+			productName = "Pods-GT Buzzcard Scanner";
+			productReference = BA3BE2A0CA13F5AAECD0A013F20C6147 /* libPods-GT Buzzcard Scanner.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BAE8C68C27E3C7F4A6FAFE56D57AD6BE /* TWMessageBarManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1887DCC19815DFEC40F0EA2FE3CE52E5 /* Build configuration list for PBXNativeTarget "TWMessageBarManager" */;
+			buildPhases = (
+				361140FC31FD254FF6929A02F9FDAA41 /* Sources */,
+				D6C57CFD6FC8CC07D9BB7B4ED49E2405 /* Frameworks */,
+				3241768AAFBC318C90B486B2CCCEA359 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TWMessageBarManager;
+			productName = TWMessageBarManager;
+			productReference = 224EAA5E453350B4959D84090B895188 /* libTWMessageBarManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DD03EEB17ED023A698787EA6106F6971 /* RSBarcodes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A039B4A0507CB7B3E38A95201636E544 /* Build configuration list for PBXNativeTarget "RSBarcodes" */;
+			buildPhases = (
+				834E5661895D3EB03B4F3B7581C766FF /* Sources */,
+				730FE42C13E4995B36847C994BA7E5F4 /* Frameworks */,
+				24EFE5175B05D6D0438FDF927B94EF3E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSBarcodes;
+			productName = RSBarcodes;
+			productReference = 894FCDF3E5869228BA2ACE33B5CFADB1 /* libRSBarcodes.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2CA9E62B1C2669822C45A84F69DE2279 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				515BF6F7F529EBB43210ADF1D6E27757 /* Pods-GT Buzzcard Scanner */,
+				DD03EEB17ED023A698787EA6106F6971 /* RSBarcodes */,
+				BAE8C68C27E3C7F4A6FAFE56D57AD6BE /* TWMessageBarManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EC461E62EF1E8DA834856B00318879E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32381F09FD6FA8DCABCA7E9B69BC166 /* Pods-GT Buzzcard Scanner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		361140FC31FD254FF6929A02F9FDAA41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E19BC32A51EBC8A2A1ED0643E46D785 /* TWMessageBarManager-dummy.m in Sources */,
+				A0F2E16599E6D457A9FD22477FC372BA /* TWMessageBarManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834E5661895D3EB03B4F3B7581C766FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52ED0C3E3F07F6DD22F8C7A013786B8 /* RSBarcodes-dummy.m in Sources */,
+				4BD678166885CD4A6249D4DE3FFCB099 /* RSCode128Generator.m in Sources */,
+				41C6021FD7B5253CBB9FC3F34622AE96 /* RSCode39Generator.m in Sources */,
+				321E38676857450A85CB338F25C8CB5A /* RSCode39Mod43Generator.m in Sources */,
+				5418DE188B0B7BC38A818371683512BA /* RSCode93Generator.m in Sources */,
+				87082DDEFCAEA266A7D13FC8F16E9486 /* RSCodeGenerator.m in Sources */,
+				955BD92F08EA0BEB4F0654AE915EDC04 /* RSCodeView.m in Sources */,
+				83968A8E9EA6DD5F8BF0BA4E84DECE25 /* RSCornersView.m in Sources */,
+				9BFBBD877554F735D6946DE2D4DE68EC /* RSEAN13Generator.m in Sources */,
+				EF97E4E2CEB992DE55359EEC71D58AB9 /* RSEAN8Generator.m in Sources */,
+				B96724B913F4375D8BE3E1DB001F3A8D /* RSEANGenerator.m in Sources */,
+				9ED0D7FABEFFBCA3C0D391C1BB78A0EE /* RSExtendedCode39Generator.m in Sources */,
+				8D38CF90E97DAE628567EA38883F391D /* RSISBN13Generator.m in Sources */,
+				18CB0744B8E1E3079C43BAFE72AB27DE /* RSISSN13Generator.m in Sources */,
+				DB8C10AEE4B707F63487D3348B01CBED /* RSITF14Generator.m in Sources */,
+				AB3358AFB84E5D0145AD28D306DE0508 /* RSITFGenerator.m in Sources */,
+				7BBD96EDC137414C7AE2DD5338A6CCAF /* RSScannerViewController.m in Sources */,
+				7DE2DD72154C005D9D53FAC31010C736 /* RSUnifiedCodeGenerator.m in Sources */,
+				98E512785110501B451B583C45A97504 /* RSUPCEGenerator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A6595314B52B8E7F75F74B3565C55C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSBarcodes;
+			target = DD03EEB17ED023A698787EA6106F6971 /* RSBarcodes */;
+			targetProxy = 4E826226FC8E7BAF049682261D0E10B0 /* PBXContainerItemProxy */;
+		};
+		86EB39D9752F801D65C2E192286ADF43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TWMessageBarManager;
+			target = BAE8C68C27E3C7F4A6FAFE56D57AD6BE /* TWMessageBarManager */;
+			targetProxy = 3598216A229649E1DD33D04FADCAE17B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2059905E8893BC58C29C4B8AA32E188C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB87FA2E02692EB34A6CEF1234C17DD7 /* RSBarcodes.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSBarcodes/RSBarcodes-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		29F5945502A4B25E26A603CAB830E80B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB87FA2E02692EB34A6CEF1234C17DD7 /* RSBarcodes.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSBarcodes/RSBarcodes-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		31EA3EFBD513BC1660D0EE676210DD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FC2F1F80313D372E721956E45315A79 /* Pods-GT Buzzcard Scanner.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		82E71D6D6C283E7F2D4B8D8544F05DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 223D1061B913ADBB498CF6DAF1EB8494 /* Pods-GT Buzzcard Scanner.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B6F2EE7E2225AEDC5D12D4784242C149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B066DA77D78D3597B702F3B0A49627E /* TWMessageBarManager.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TWMessageBarManager/TWMessageBarManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BAF5065C255A117342ABD4A04EB4A119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B066DA77D78D3597B702F3B0A49627E /* TWMessageBarManager.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TWMessageBarManager/TWMessageBarManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C074F63C9EE7CB4D8C618390A32CEC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E43846B588E1892F3093F3B7082B6DFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1887DCC19815DFEC40F0EA2FE3CE52E5 /* Build configuration list for PBXNativeTarget "TWMessageBarManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6F2EE7E2225AEDC5D12D4784242C149 /* Debug */,
+				BAF5065C255A117342ABD4A04EB4A119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C074F63C9EE7CB4D8C618390A32CEC35 /* Debug */,
+				E43846B588E1892F3093F3B7082B6DFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A039B4A0507CB7B3E38A95201636E544 /* Build configuration list for PBXNativeTarget "RSBarcodes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29F5945502A4B25E26A603CAB830E80B /* Debug */,
+				2059905E8893BC58C29C4B8AA32E188C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2583D7C0AB62A5C29B9EA956E2A70A9 /* Build configuration list for PBXNativeTarget "Pods-GT Buzzcard Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31EA3EFBD513BC1660D0EE676210DD1A /* Debug */,
+				82E71D6D6C283E7F2D4B8D8544F05DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
