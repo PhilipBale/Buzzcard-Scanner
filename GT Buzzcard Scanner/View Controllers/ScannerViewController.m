@@ -8,7 +8,8 @@
 
 #import "ScannerViewController.h"
 #import <TWMessageBarManager.h>
-
+#import "BuzzcardScan.h"
+#import <Realm/RLMRealm.h>
 
 @interface ScannerViewController ()
 {
@@ -23,27 +24,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //    self.scanner = [[RSScannerViewController alloc] initWithCornerView:YES
-    //                                                           controlView:YES
-    //                                                       barcodesHandler:^(NSArray *barcodeObjects) {
-    //                                                           for (AVMetadataObject *metaData in barcodeObjects) {
-    //                                                               NSLog(@"Buzzcard number: %@", [metaData valueForKey:@"stringValue"]);
-    //                                                               [TSMessage showNotificationInViewController:self.scanner
-    //                                                                                                     title:@"Update available"
-    //                                                                                                  subtitle:@"Please update the app"
-    //                                                                                                     image:nil
-    //                                                                                                      type:TSMessageNotificationTypeMessage
-    //                                                                                                  duration:TSMessageNotificationDurationAutomatic
-    //                                                                                                  callback:nil
-    //                                                                                               buttonTitle:nil
-    //                                                                                            buttonCallback:nil
-    //                                                                                                atPosition:TSMessageNotificationPositionTop
-    //                                                                                      canBeDismissedByUser:YES];
-    //                                                           }
-    //                                                       }
-    //                                               preferredCameraPosition:AVCaptureDevicePositionBack];
-    
-    // Do any additional setup after loading the view.
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -81,20 +61,26 @@
 
 - (void)processBuzzcardNumber:(NSString *)buzzcardNumber
 {
-    if (![self.alreadyFoundIds containsObject:buzzcardNumber]) {
+    BOOL alreadyFound = [self.alreadyFoundIds containsObject:buzzcardNumber];
+    BOOL isLastFound = [self.lastNumber isEqualToString:buzzcardNumber];
+    
+    if (!alreadyFound) {
         dispatch_async(dispatch_get_main_queue(), ^{
             
             [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Found Buzzcard!"
                                                            description:buzzcardNumber
                                                                   type:TWMessageBarMessageTypeSuccess];
             [self.alreadyFoundIds addObject:buzzcardNumber];
+            [self persistBuzzcardNumber:buzzcardNumber];
         });
-    } else if (![self.lastNumber isEqualToString:buzzcardNumber]) {
+    } else if (!isLastFound) {
         NSLog(@"Already found");
         dispatch_async(dispatch_get_main_queue(), ^{
             [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Already Found this Buzzcard!"
                                                            description:buzzcardNumber
                                                                   type:TWMessageBarMessageTypeError];
+            
+            [self persistBuzzcardNumber:buzzcardNumber];
         });
         
     }
@@ -102,13 +88,18 @@
     self.lastNumber = buzzcardNumber;
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
+- (void)persistBuzzcardNumber:(NSString *)buzzcardNumber {
+    [[RLMRealm defaultRealm] beginWriteTransaction];
+    {
+        BuzzcardScan *scan = [[BuzzcardScan alloc] init];
+        [scan setBuzzcardNumber:buzzcardNumber];
+        [scan setTimestamp:[[NSDate date] timeIntervalSince1970]];
+        NSInteger previousScans = [BuzzcardScan objectsWhere:@"buzzcardNumber == %@", buzzcardNumber].count;
+        [scan setScanNumber:previousScans + 1];
+        [BuzzcardScan createInDefaultRealmWithValue:scan];
+    }
+    [[RLMRealm defaultRealm] commitWriteTransaction];
     
-    //    dispatch_async(dispatch_get_main_queue(), ^{
-    //        [self showScanner];
-    //    });
 }
 
 - (void)showScanner

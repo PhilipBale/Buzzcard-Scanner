@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		85EC4856375799CC590750C9 /* libPods-GT Buzzcard Scanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B627A12357546EA7AE133596 /* libPods-GT Buzzcard Scanner.a */; };
+		D407242E1C2A80E0004823C2 /* BuzzcardScan.m in Sources */ = {isa = PBXBuildFile; fileRef = D407242D1C2A80E0004823C2 /* BuzzcardScan.m */; };
 		D4AB25B51BE2E5DB009F1441 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AB25B41BE2E5DB009F1441 /* main.m */; };
 		D4AB25B81BE2E5DB009F1441 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AB25B71BE2E5DB009F1441 /* AppDelegate.m */; };
 		D4AB25C11BE2E5DB009F1441 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4AB25BF1BE2E5DB009F1441 /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 		A211E9D20DF9F79B38947F86 /* Pods-GT Buzzcard Scanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GT Buzzcard Scanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GT Buzzcard Scanner/Pods-GT Buzzcard Scanner.debug.xcconfig"; sourceTree = "<group>"; };
 		AA35EAE7BFAF8FD6B21257E3 /* Pods-GT Buzzcard Scanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GT Buzzcard Scanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-GT Buzzcard Scanner/Pods-GT Buzzcard Scanner.release.xcconfig"; sourceTree = "<group>"; };
 		B627A12357546EA7AE133596 /* libPods-GT Buzzcard Scanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GT Buzzcard Scanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D407242C1C2A80E0004823C2 /* BuzzcardScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuzzcardScan.h; path = Models/BuzzcardScan.h; sourceTree = "<group>"; };
+		D407242D1C2A80E0004823C2 /* BuzzcardScan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuzzcardScan.m; path = Models/BuzzcardScan.m; sourceTree = "<group>"; };
 		D4AB25B01BE2E5DB009F1441 /* GT Buzzcard Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GT Buzzcard Scanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4AB25B41BE2E5DB009F1441 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D4AB25B61BE2E5DB009F1441 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,6 +58,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D407242F1C2A80E6004823C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D407242C1C2A80E0004823C2 /* BuzzcardScan.h */,
+				D407242D1C2A80E0004823C2 /* BuzzcardScan.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		D4AB25A71BE2E5DB009F1441 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +88,7 @@
 		D4AB25B21BE2E5DB009F1441 /* GT Buzzcard Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				D407242F1C2A80E6004823C2 /* Models */,
 				D4AB25CD1BE2E925009F1441 /* View Controllers */,
 				D4AB25B61BE2E5DB009F1441 /* AppDelegate.h */,
 				D4AB25B71BE2E5DB009F1441 /* AppDelegate.m */,
@@ -239,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4AB25B81BE2E5DB009F1441 /* AppDelegate.m in Sources */,
+				D407242E1C2A80E0004823C2 /* BuzzcardScan.m in Sources */,
 				D4AB25D01BE2E94A009F1441 /* ScannerViewController.m in Sources */,
 				D4AB25B51BE2E5DB009F1441 /* main.m in Sources */,
 				D4AB25D31BE2E9A0009F1441 /* HistoryViewController.m in Sources */,

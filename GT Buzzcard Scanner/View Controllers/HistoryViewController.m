@@ -7,6 +7,7 @@
 //
 
 #import "HistoryViewController.h"
+#import "BuzzcardScan.h"
 
 
 @interface HistoryViewController ()

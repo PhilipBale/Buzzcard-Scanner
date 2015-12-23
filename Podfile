@@ -6,5 +6,6 @@
 target 'GT Buzzcard Scanner' do
 	pod 'RSBarcodes', '~> 0.1.4'
 	pod 'TWMessageBarManager'
+    pod 'Realm'
 end
 

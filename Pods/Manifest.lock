@@ -1,12 +1,17 @@
 PODS:
+  - Realm (0.97.0):
+    - Realm/Headers (= 0.97.0)
+  - Realm/Headers (0.97.0)
   - RSBarcodes (0.1.4)
   - TWMessageBarManager (1.7.2)
 
 DEPENDENCIES:
+  - Realm
   - RSBarcodes (~> 0.1.4)
   - TWMessageBarManager
 
 SPEC CHECKSUMS:
+  Realm: b498a6fb9d288b171ff98d0e2d4384c295be8990
   RSBarcodes: 6b062b5aba3e75a5e889b2465ef1bb256215fbd0
   TWMessageBarManager: e7adc066ee425174f5dee79473fce913b1cd1662
 
