@@ -10,7 +10,7 @@
 
 @interface BuzzcardScan : RLMObject
 
-@property NSInteger scanId;
+@property NSString* scanId;
 @property NSInteger timestamp; // Unix timestamp
 @property NSString *buzzcardNumber;
 @property NSInteger scanNumber; // Number of times this card has been scanned

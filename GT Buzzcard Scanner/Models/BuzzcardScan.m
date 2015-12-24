@@ -15,4 +15,8 @@
     return @"scanId";
 }
 
++ (NSDictionary *)defaultPropertyValues {
+    return @{@"scanId": [[NSUUID UUID] UUIDString]};
+}
+
 @end

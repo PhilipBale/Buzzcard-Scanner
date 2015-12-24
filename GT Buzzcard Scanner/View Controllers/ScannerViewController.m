@@ -26,13 +26,16 @@
     [super viewDidLoad];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.alreadyFoundIds = [[NSMutableArray alloc] init];
         self.lastNumber = @"";
-        
         
         __weak typeof(self) weakSelf = self;
         self.barcodesHandler = ^(NSArray *barcodeObjects) {
@@ -89,6 +92,7 @@
 }
 
 - (void)persistBuzzcardNumber:(NSString *)buzzcardNumber {
+    NSLog(@"Persisting buzzcard");
     [[RLMRealm defaultRealm] beginWriteTransaction];
     {
         BuzzcardScan *scan = [[BuzzcardScan alloc] init];
